@@ -1,17 +1,58 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import header_image from './field-header.jpg';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from "react-router-dom";
+
+class App extends React.Component {
+
+
+
+    render() {
+        return (
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Index/>} />
+                </Routes>
+            </Router>
+        );
+    }
+
+}
+
+class Index extends React.Component {
+    render() {
+        return (
+            <div>
+                <Header>
+                </Header>
+                <div>
+                </div>
+            </div>
+            
+            
+        );
+
+    }
+}
+
+class Header extends React.Component{
+    render(){
+        return(
+                <header className="app-header">
+                    <img src={header_image} alt="" className="bck-image"/>
+                </header>
+                
+        );
+    }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    , document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
