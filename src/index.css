@@ -5,17 +5,187 @@ html,body{
     background-color: #ffffff;
 }
 
+.app{
+    display: flex;
+    flex-direction: column;
+    background-color: #C2C2C2;
+    width: 100vmax;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.myBody{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-height: 100%;
+    height: 90vh;
+    max-width: 100%;
+    background-color: #C2C2C2;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    
+}
+
 .app-header {
-    width:300px;
-    font: 25px Arial, Helvetica, sans-serif; 
-    color: #7D2116; 
-    border-top: 14px solid #7FD991; 
-    border-left: 2px solid #7FD991; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    max-width: 100%;
+    background-image: url("./field-header.jpg");
+    
+    border-radius: 0px 0px 23px 23px;
+    width: 100vmax;
+    height: 12vh;
+    overflow: auto;
+    margin-bottom: 1%;
+
+   
+}
+
+
+.logo{
+    display: flex;
+    margin-left: 1%;
+    flex-direction: row;
+    background-color: white;
+    width: 10%;
+    height: 8vh;
+    border-radius: 33px;
+    text-align: left;
+    align-items: center;
+}
+
+.logo_text{
+    margin-top: 10%;
+    margin-left: 20%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+   
+}
+
+.logo_image{
+    width: 3vw;
+    height: 6vh;
+    border-radius: 50%;
+    margin-left: 5%;
 
 }
 
-.bck-image{
+.ache_campo{
+    width: 40vw;
+    max-width: 100%;
+    background-color: white;
+    max-height: 100%;
+    height: 45vh;
+    align-items: center;
+    margin-left: 0%;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+.img_ache_campo{
+    width: 40vw;
+    max-width: 100%;
+    background-color: tomato;
+    height: 50%;
+    border-radius: 23px 23px 0px 0px;
+}
+
+.alugue_campo{
+    width: 40vw;
+    max-width: 100%;
+    background-color: white;
+    max-height: 100%;
+    height: 45vh;
+    align-items: center;
+    margin-left: 0%;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+    text-overflow: clip;
+    
+}
+
+.img_alugue_campo{
+    width: 40vw;
+    max-width: 100%;
+    background-color: green;
+    height: 50%;
+    border-radius: 23px 23px 0px 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 100%;
+    justify-content: space-around;
+    margin-top: 0;
+}
+
+.saiba_mais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 100%;
+    background-color: white;
+    max-height: 100%;
+    height: 35vh;
+    align-items: center;
+    margin-left: 0%;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+.titulo_card{
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text_card{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    margin: 2%;
+    margin-top: 0;
+
+    
+}
+
+#img_field1{
     width: 100%;
-    height: max-content;
-
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 23px 23px 0px 0px;
+    object-position: 0% 55%;
 }
+
+#img_field2{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 23px 23px 0px 0px;
+    object-position: 0% 50%;
+}
+
+
+
